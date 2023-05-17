@@ -26,7 +26,9 @@ body {
 }
 
 nav {
-    margin-left: 500px;
+    margin-left: 400px;
+
+
 }
 
 .navbar a {
@@ -331,4 +333,41 @@ nav {
         opacity: 1;
         transform: translateY(0);
     }
+}
+
+.row {
+
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+
+}
+
+/*-------------Hakkimda------------------- */
+
+.hakkimda {
+    padding: 80px 0;
+    color: #ababab;
+
+}
+
+.about-col-1 {
+    flex-basis: 35%;
+
+}
+
+.about-col-1 img {
+
+    border-radius: 15px;
+}
+
+.about-col-2 {
+    margin-right: 400px;
+}
+
+.alt-baslik {
+    font-size: 60px;
+    font-weight: 600;
+    color: #fff;
 }

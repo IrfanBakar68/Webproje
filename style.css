@@ -26,7 +26,7 @@ body {
 }
 
 nav {
-    margin-left: 400px;
+    margin-left: 450px;
 
 
 }
@@ -346,10 +346,16 @@ nav {
 
 /*-------------Hakkimda------------------- */
 
-.hakkimda {
+.Hakkimda {
     padding: 80px 0;
     color: #ababab;
 
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .about-col-1 {
@@ -358,16 +364,70 @@ nav {
 }
 
 .about-col-1 img {
-
+    width: 450px;
+    height: 600px;
     border-radius: 15px;
 }
 
 .about-col-2 {
-    margin-right: 400px;
+    flex-basis: 60px;
+    margin-right: 200px;
+    margin-top: 200px;
+
 }
 
 .alt-baslik {
     font-size: 60px;
     font-weight: 600;
     color: #fff;
+}
+
+/*------------Memleketim----------*/
+
+#Memleketim {
+    padding: 30px 0;
+
+}
+
+.memleketim-liste {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+
+
+}
+
+.memleketim-liste div {
+    background: black;
+    padding: 40px;
+    font-size: 13px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+
+}
+
+.memleket-list div i {
+    font-size: 50px;
+    margin: bottom 30px;
+}
+
+.memleket-list div h2 {
+    font-size: 30px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.memleket-list div a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    display: inline-block;
+}
+
+.memleket-list div:hover {
+    background: #ff004f;
+    transform: translateY(-10px);
 }

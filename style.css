@@ -9,8 +9,8 @@
 body {
     background: #0c1022;
     color: #ffffff;
-    SS font-family: 'monserrat', sans-serif;
-    S background-repeat: no-repeat;
+    font-family: 'monserrat', sans-serif;
+    background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
     padding-top: 50px;
@@ -31,8 +31,18 @@ body {
 
 }
 
+btn1 {
+    padding: 14px 60px;
+    background: linear-gradient(45deg, #f06,
+            #3cf, #f06);
+    font-size: 18px;
+    margin: top 20px;
+    cursor: pointer;
+}
+
 .nav {
     margin-left: 450px;
+    margin-top: 50px;
 
 
 }
@@ -348,7 +358,7 @@ body {
 }
 
 .memleketim-liste div {
-    background: rgb(68, 65, 65);
+    background: black;
     padding: 30px;
     font-size: 13px;
     font-weight: 300;
@@ -550,5 +560,83 @@ form btn1 {
 .minmax {
     font-size: 24px;
     text-shadow: 1px 3px rgba(0, 0, 0, .8);
+
+}
+
+/* LOGIN */
+
+#login {
+
+    background: #0c1022;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+}
+
+form {
+    background: #424242;
+    padding: 20px;
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .8);
+    width: 300px;
+    height: 400px;
+
+
+
+}
+
+form h2 {
+    margin-top: 20px;
+    font-size: 55px;
+    color: white;
+    margin-bottom: 30px;
+
+
+
+}
+
+form input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 10px;
+    margin: 20px;
+    color: #fff;
+    height: 30px;
+    width: 80%;
+    border-radius: 40px;
+    transition: 0.2s ease-in;
+}
+
+form input[type="text"],
+form input[type="password"] {
+
+    border: solid 2px #189cfc;
+}
+
+form input[type="submit"] {
+    border: solid 2px #55e6c1;
+    box-sizing: border-box;
+    height: 50px;
+    width: 40%;
+
+    cursor: pointer;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    width: 80%;
+    border: solid 2px #55e6c1;
+}
+
+form input[type="submit"]:hover {
+    background: #55e6c1;
+    color: #182c61;
+
 
 }

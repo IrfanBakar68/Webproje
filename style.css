@@ -6,16 +6,18 @@
 
 }
 
-html {
-    scroll-behavior: smooth;
-}
-
 body {
     background: #0c1022;
     color: #ffffff;
+    SS font-family: 'monserrat', sans-serif;
+    S background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-top: 50px;
+    height: 100vh;
 }
 
-#header {
+.header {
     position: fixed;
     top: 0;
     left: 0px;
@@ -29,7 +31,7 @@ body {
 
 }
 
-nav {
+.nav {
     margin-left: 450px;
 
 
@@ -53,6 +55,11 @@ nav {
     background: linear-gradient(45deg, #f06, #3cf);
     -webkit-text-fill-color: transparent;
     -webkit-background-clip: text;
+}
+
+.navbar {
+    margin-left: 500px;
+    margin-top: 10px;
 }
 
 #home {
@@ -95,74 +102,6 @@ nav {
 }
 
 
-.btn1 {
-
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 180px;
-    height: 48px;
-    background: linear-gradient(45deg, #f06,
-            #3cf, #f06);
-    border-radius: 40px;
-    font-size: 19px;
-    color: #fff;
-
-    text-decoration: none;
-
-    font-weight: 600;
-
-    letter-spacing: 1px;
-
-
-
-
-}
-
-
-.btn1::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    inset: 0;
-    background: linear-gradient(45deg, #f06,
-            #3cf, #f06);
-    background-size: 200%;
-    background-position: 0 0;
-    z-index: -1;
-    border-radius: 40px;
-
-}
-
-.btn1:hover::before {
-    background-position: 100% 0;
-}
-
-
-
-
-.btn1::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    inset: 0;
-    background: linear-gradient(45deg, #f06,
-            #3cf, #f06);
-    background-position: 0 0;
-    background-size: 200%;
-    z-index: -1;
-    border-radius: 40px;
-    transition: .5s ease;
-    filter: blur(5px);
-
-
-}
-
-.btn1:hover::after {
-    background-position: 100% 0;
-}
 
 .home-sci a {
     display: flex;
@@ -356,7 +295,7 @@ nav {
 
 /*-------------Hakkimda------------------- */
 
-.Hakkimda {
+#Hakkimda {
     padding: 80px 0;
     color: #ababab;
 
@@ -409,7 +348,7 @@ nav {
 }
 
 .memleketim-liste div {
-    background: black;
+    background: rgb(68, 65, 65);
     padding: 30px;
     font-size: 13px;
     font-weight: 300;
@@ -500,9 +439,11 @@ nav {
     transform: translateY(-5px);
 }
 
-btn1 btn2 {
+btn1 {
     display: inline-block;
-    background: #ff004f;
+
+    background: linear-gradient(45deg, #f06,
+            #3cf, #f06);
 }
 
 .sag-iletisim form {
@@ -523,8 +464,10 @@ form textarea {
 
 }
 
-form btn2 {
+form btn1 {
     padding: 14px 60px;
+    background: linear-gradient(45deg, #f06,
+            #3cf, #f06);
     font-size: 18px;
     margin: top 20px;
     cursor: pointer;
@@ -543,4 +486,69 @@ form btn2 {
 
 .copyright i {
     color: #ff004f;
+}
+
+
+
+
+
+
+
+.app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+
+}
+
+.baslik {
+    padding: 50px 20px 30px 20px;
+}
+
+.baslik h1 {
+    font-size: 50px;
+    color: #fbb034;
+    text-shadow: 1px 3px rgba(0, 0, 0, .9);
+
+}
+
+.baslik input {
+    width: 100%;
+    padding: 10px;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    border-bottom: 2px solid #fbb034;
+    text-align: center;
+    font-size: 20px;
+    color: #f2f2f2;
+
+}
+
+.city {
+    font-size: 35px;
+    font-weight: 500;
+    margin-bottom: 10px;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+}
+
+.temp {
+    font-size: 100px;
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-shadow: 1px 5px rgba(0, 0, 0, .1);
+}
+
+.desc {
+    font-size: 25px;
+    font-style: italic;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+}
+
+.minmax {
+    font-size: 24px;
+    text-shadow: 1px 3px rgba(0, 0, 0, .8);
+
 }

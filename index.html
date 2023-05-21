@@ -8,6 +8,7 @@
     <title>Web Sayfa</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
 </head>
 
 <body>
@@ -19,7 +20,8 @@
             <a href="#Memleketim" style="--i:2;">Memleketim</a>
             <a href="#Cv" style="--i:3;">Cv</a>
             <a href="#iletisim" style="--i:4;">İletişim</a>
-            <a href="#Login" style="--i:5;">Login</a>
+            <a href="#Api" style="--i:5;">Api</a>
+            <a href="#Login" style="--i:6;">Login</a>
         </nav>
     </header>
 
@@ -42,7 +44,7 @@
             <h4> WebSitesi</h4>
             <br>
             <br>
-            <a href="#" class="btn1">Hoşgeldiniz</a>
+            <a href="#" class="btn2">Hoşgeldiniz</a>
         </div>
 
         <div class="home-img">
@@ -226,11 +228,11 @@
                             </div>
                         </div>
                         <div class="sag-iletisim">
-                            <form name="submit-to-google-sheet">
-                                <input type="text" name="Isim" placeholder="Adınız" required>
-                                <input type="email" name="Email" placeholder="Emailiniz" required>
-                                <textarea name="Mesaj" rows="6" placeholder="Mesajiniz"></textarea>
-                                <button type="submit" class="btn1 btn2" style="margin-left: 30px;">Gönder</button>
+                            <form action="form.php" method="post" enctype="multipart/form-data">
+                                <input type="text" name="isim" required placeholder="Adınız" required>
+                                <input type="email" name="email" required placeholder="Emailiniz" required>
+                                <textarea name="content" rows="6" placeholder="Mesajiniz"></textarea>
+                                <button type="submit" class="btn2" style="margin-left: 30px;">Gönder</button>
                             </form>
                         </div>
                     </div>
@@ -242,27 +244,37 @@
                 </div>
             </div>
 
-
-            <!--JS-->
-
-            <script>
-                const scriptURL = 'https://script.google.com/macros/s/AKfycbwSGSO3eT9hjS5p-0I5I4PNjic5XOwqr-kbPhtXOkZfDD2dU2oE3R8hOmjJ1Cal-0c/exec'
-                const form = document.forms['submit-to-google-sheet']
-
-                form.addEventListener('submit', e => {
-                    e.preventDefault()
-                    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
-                        .then(response => console.log('Success!', response))
-                        .catch(error => console.error('Error!', error.message))
-                })
-            </script>
-
-
+            <!-------------------API---------------------->
+            <div id="Api">
+                <div class="app">
+                    <div class="baslik">
+                        <h1>Hava durumu</h1>
+                        <input type="text" id="searchBar" placeholder="Sehir Giriniz..">
+                    </div>
+                    <div class="content">
+                        <div class="city"> Istanbul,TR </div>
+                        <div class="temp">15°C</div>
+                        <div class="desc">Gunesli</div>
+                        <div class="minmax">14°c / 19°c</div>
+                    </div>
+                </div>
 
 
 
+                <script src="script.js"></script>
+
+            </div>
 
 
 </body>
+
+
+
+
+
+
+
+
+
 
 </html>
